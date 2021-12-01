@@ -13,7 +13,7 @@ const SavedBooks = () => {
 
   const [removeBook, {error}] = useMutation(REMOVE_BOOK)
 
-  const handleDeleteBook = async (bookId) => {
+  const handleDeleteBook = async (removeBookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
     if (!token) {
