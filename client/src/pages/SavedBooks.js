@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
 import { useMutation, useQuery} from "@apollo/client"
 import Auth from '../utils/auth';
@@ -29,6 +29,7 @@ const SavedBooks = () => {
         throw new Error("Error fetching data")
       }
 
+      removeBookId(bookId); 
     } catch (error) {
       console.error(error);
     }
