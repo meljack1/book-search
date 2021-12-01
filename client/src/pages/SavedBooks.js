@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap';
-import { useMutation, useQuery} from "@apollo/client"
+import { useMutation, useQuery } from "@apollo/client"
 import Auth from '../utils/auth';
 
 import { removeBookId } from '../utils/localStorage';
@@ -9,8 +9,8 @@ import { GET_ME } from "../utils/queries"
 
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
-  const userData = data?.me || data?.user || {};
-
+  const userData = data?.me || {};
+  console.log(userData);
   const [removeBook, {error}] = useMutation(REMOVE_BOOK)
 
   const handleDeleteBook = async (bookId) => {
