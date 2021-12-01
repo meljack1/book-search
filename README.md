@@ -33,9 +33,9 @@ To run the application for development on a local server, follow the following s
 
 Screenshots:
 
-![Screenshot of the front page of the application](./assets/screenshots/screenshot1.PNG)
-![Screenshot of the saved books page](./assets/screenshots/screenshot2.PNG)
-![Screenshot of the login modal displayed](./assets/screenshots/screenshot3.PNG)
+![Screenshot of the front page of the application](./assets/screenshot1.PNG)
+![Screenshot of the saved books page](./assets/screenshot2.PNG)
+![Screenshot of the login modal displayed](./assets/screenshot3.PNG)
 
 ## License 
 This project is covered under the MIT License: [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
